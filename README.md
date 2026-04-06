@@ -47,7 +47,7 @@ npm run register
 npm start
 ```
 
-💬 Commands
+## 💬 Commands
 /follow
 Add or update a YouTube channel
 Usage:
@@ -79,7 +79,7 @@ Forces a re-sync (same as reset)
 /forcecheck input:@mkbhd
 ```
 
-🧠 How it works
+## 🧠 How it works
 Uses YouTube RSS feeds to detect new uploads
 Uses YouTube API to:
 resolve channel names
@@ -90,7 +90,7 @@ ytchannels.json → last video tracking
 Prevents duplicate posts
 First sync posts the latest video immediately
 
-📁 Project Structure
+## 📁 Project Structure
 ```bash
 yt-feed-bridge/
 ├─ Opslag/
@@ -105,7 +105,7 @@ yt-feed-bridge/
 └─ README.md
 ```
 
-⚠️ Notes
+## ⚠️ Notes
 - Slash commands are registered globally
 - Updates to commands require:
 ```bash
@@ -113,7 +113,7 @@ npm run register
 ```
 - Discord may cache commands (delay up to ~1 hour)
 
-🚀 Why this bot?
+## 🚀 Why this bot?
 This project is intentionally kept:
 - small
 - simple
