@@ -1,0 +1,19 @@
+{
+  "name": "yt-feed-bridge",
+  "version": "1.0.0",
+  "description": "Monitor YouTube channels via RSS and send upload and livestream notifications to Discord.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "register": "node register-commands.js",
+    "unregister": "node unregister-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.2",
+    "dotenv": "^17.4.1",
+    "rss-parser": "^3.13.0"
+  }
+}
