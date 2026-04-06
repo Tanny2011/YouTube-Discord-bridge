@@ -28,7 +28,10 @@ cd yt-feed-bridge
 npm install
 ```
 
+---
+
 ## ⚙️ Setup
+
 1. Create a .env file
 ```bash
 DISCORD_TOKEN=your_discord_bot_token
@@ -47,9 +50,13 @@ npm run register
 npm start
 ```
 
+---
+
 ## 💬 Commands
 /follow
+
 Add or update a YouTube channel
+
 Usage:
 ```bash
 /follow input:@mkbhd discord_channel:#youtube
@@ -60,35 +67,47 @@ Supported input:
 - https://youtube.com/@handle
 - https://youtube.com/channel/UC...
 
+
 /unfollow
+
 Remove a followed channel
 ```bash
 /unfollow input:@mkbhd
 ```
+
 /listfollows
+
 Show all followed channels
 
 /resetlastvideo
+
 Reset stored video (forces next post)
 ```bash
 /resetlastvideo input:@mkbhd
 ```
+
 /forcecheck
+
 Forces a re-sync (same as reset)
 ```bash
 /forcecheck input:@mkbhd
 ```
 
+---
+
 ## 🧠 How it works
-Uses YouTube RSS feeds to detect new uploads
-Uses YouTube API to:
-resolve channel names
-detect livestreams
-Stores state in:
-channels.json → channel links
-ytchannels.json → last video tracking
-Prevents duplicate posts
-First sync posts the latest video immediately
+
+- Uses YouTube RSS feeds to detect new uploads
+- Uses YouTube API to:
+  - resolve channel names
+  - detect livestreams
+- Stores state in:
+  - channels.json → channel links
+  - ytchannels.json → last video tracking
+- Prevents duplicate posts
+- First sync posts the latest video immediately
+
+---
 
 ## 📁 Project Structure
 ```bash
@@ -105,6 +124,8 @@ yt-feed-bridge/
 └─ README.md
 ```
 
+---
+
 ## ⚠️ Notes
 - Slash commands are registered globally
 - Updates to commands require:
@@ -113,10 +134,14 @@ npm run register
 ```
 - Discord may cache commands (delay up to ~1 hour)
 
+---
+
 ## 🚀 Why this bot?
+
 This project is intentionally kept:
 - small
 - simple
 - easy to understand
 - easy to extend
+
 No database, no overengineering — just a clean YouTube → Discord bridge.
